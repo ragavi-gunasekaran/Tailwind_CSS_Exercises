@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Exercise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+<div class="max-w-6xl mx-auto p-6 md:p-10 space-y-20">
+    <header class="text-center space-y-4">
+        <p class="text-sm font-bold tracking-widest text-yellow-500 uppercase">Tailwind CSS Practice Project</p>
+        <h1 class="text-5xl font-extrabold text-blue-700">Visit Sweden</h1>
+        <p class="max-w-2xl mx-auto text-slate-600">
+            A Sweden-themed practice page covering typography, cards, grids, layouts, hover effects, forms, dark mode, and dashboard design.
+        </p>
+    </header>
+
+    <!-- Exercise 1 -->
+    <section id="ex-1">
+        <h2 class="text-2xl font-bold mb-4">1. Typography & Spacing</h2>
+        <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-200 space-y-4">
+            <h1 class="text-4xl font-bold text-blue-700">Explore Sweden</h1>
+            <h2 class="text-xl font-semibold text-slate-600">The land of forests, lakes, fika, and northern lights</h2>
+            <p class="leading-relaxed">
+                Sweden is known for its clean cities, peaceful nature, and balanced lifestyle. From Stockholm’s old town to Lapland’s snowy landscapes, every region has something unique to offer.
+            </p>
+            <p class="leading-relaxed">
+                You can enjoy quiet lakes, green forests, modern public transport, cozy cafés, and beautiful winter activities like skiing, ice skating, and watching the northern lights.
+            </p>
+        </div>
+    </section>
+
+    <!-- Exercise 2 -->
+    <section id="ex-2">
+        <h2 class="text-2xl font-bold mb-4">2. Colorful Alert Boxes</h2>
+        <div class="space-y-4">
+            <div class="bg-green-100 border border-green-400 text-green-800 p-4 rounded-lg">
+                <span class="font-bold">Success:</span> Your train ticket from Karlskrona to Stockholm has been booked successfully.
+            </div>
+            <div class="bg-yellow-100 border border-yellow-400 text-yellow-800 p-4 rounded-lg">
+                <span class="font-bold">Warning:</span> Snowfall is expected this evening. Please check the weather before travelling.
+            </div>
+            <div class="bg-red-100 border border-red-400 text-red-800 p-4 rounded-lg">
+                <span class="font-bold">Danger:</span> Some ferry services in the archipelago are temporarily delayed due to strong winds.
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise 3 -->
+    <section id="ex-3">
+        <h2 class="text-2xl font-bold mb-4">3. Simple Card with Shadow</h2>
+        <div class="max-w-sm mx-auto bg-white shadow-md rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-2 text-blue-700">Weekend in Stockholm</h3>
+            <p class="text-slate-600 mb-4">Walk through Gamla Stan, visit the Vasa Museum, enjoy waterfront views, and relax with Swedish fika.</p>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Read More</button>
+        </div>
+    </section>
+
+    <!-- Exercise 4 -->
+    <section id="ex-4">
+        <h2 class="text-2xl font-bold mb-4">4. Circular Profile Badge</h2>
+        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm max-w-sm">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" class="rounded-full w-12 h-12 object-cover" alt="Profile" />
+            <div>
+                <h3 class="font-bold">Anna Svensson</h3>
+                <p class="text-slate-500">Stockholm Travel Guide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise 5 -->
+    <section id="ex-5">
+        <h2 class="text-2xl font-bold mb-4">5. Interactive Buttons</h2>
+        <div class="flex flex-wrap gap-4">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:ring-2 focus:ring-blue-400">Book Trip</button>
+            <button class="bg-yellow-500 text-slate-900 px-4 py-2 rounded-lg hover:bg-yellow-400 transition-colors duration-300 focus:ring-2 focus:ring-yellow-300">Learn Swedish</button>
+            <button class="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-300 focus:ring-2 focus:ring-blue-400">View Weather</button>
+        </div>
+    </section>
+
+    <!-- Exercise 6 -->
+    <section id="ex-6">
+        <h2 class="text-2xl font-bold mb-4">6. Responsive Two-Column Layout</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-6 rounded-xl shadow-sm">
+            <div>
+                <h3 class="text-2xl font-bold mb-3 text-blue-700">Experience Swedish Nature</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Sweden has thousands of lakes, peaceful forests, hiking trails, islands, and national parks. In summer, the days are long and bright. In winter, the snowy landscapes feel magical.
+                </p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" class="rounded-xl w-full h-72 object-cover" alt="Swedish nature" />
+        </div>
+    </section>
+
+    <!-- Exercise 7 -->
+    <section id="ex-7">
+        <h2 class="text-2xl font-bold mb-4">7. Product Grid</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-xl shadow-sm p-4"><img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=600&q=80" class="rounded-lg w-full h-40 object-cover mb-3" alt=""><h3 class="font-bold">Dala Horse Souvenir</h3><p class="text-blue-600 font-semibold">450 SEK</p></div>
+            <div class="bg-white rounded-xl shadow-sm p-4"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" class="rounded-lg w-full h-40 object-cover mb-3" alt=""><h3 class="font-bold">Swedish Fika Mug</h3><p class="text-blue-600 font-semibold">120 SEK</p></div>
+            <div class="bg-white rounded-xl shadow-sm p-4"><img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=600&q=80" class="rounded-lg w-full h-40 object-cover mb-3" alt=""><h3 class="font-bold">Winter Jacket</h3><p class="text-blue-600 font-semibold">899 SEK</p></div>
+            <div class="bg-white rounded-xl shadow-sm p-4"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80" class="rounded-lg w-full h-40 object-cover mb-3" alt=""><h3 class="font-bold">Fika Gift Box</h3><p class="text-blue-600 font-semibold">299 SEK</p></div>
+            <div class="bg-white rounded-xl shadow-sm p-4"><img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=600&q=80" class="rounded-lg w-full h-40 object-cover mb-3" alt=""><h3 class="font-bold">Swedish Chocolate</h3><p class="text-blue-600 font-semibold">89 SEK</p></div>
+            <div class="bg-white rounded-xl shadow-sm p-4"><img src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&fit=crop&w=600&q=80" class="rounded-lg w-full h-40 object-cover mb-3" alt=""><h3 class="font-bold">Northern Lights Poster</h3><p class="text-blue-600 font-semibold">199 SEK</p></div>
+        </div>
+    </section>
+
+    <!-- Exercise 8 -->
+    <section id="ex-8">
+        <h2 class="text-2xl font-bold mb-4">8. Hero Section with Overlay</h2>
+        <div class="relative h-80 rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative h-full flex items-center justify-center text-center text-white">
+                <div>
+                    <h3 class="text-4xl font-bold">Discover Sweden</h3>
+                    <p class="mt-3 text-lg">Nature • Culture • Innovation • Fika</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise 9 -->
+    <section id="ex-9">
+        <h2 class="text-2xl font-bold mb-4">9. Pricing Table</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-md border">
+                <h3 class="text-xl font-bold">Basic Explorer</h3>
+                <p class="text-3xl font-bold my-4">399 SEK</p>
+                <p class="text-slate-600 mb-4">Perfect for a one-day city walk in Stockholm.</p>
+                <button class="w-full bg-slate-800 text-white py-2 rounded-lg">Choose</button>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-xl border-2 border-blue-500 scale-105">
+                <h3 class="text-xl font-bold text-blue-600">Pro Traveller</h3>
+                <p class="text-3xl font-bold my-4">799 SEK</p>
+                <p class="text-slate-600 mb-4">Best for museums, local food, and guided city tours.</p>
+                <button class="w-full bg-blue-600 text-white py-2 rounded-lg">Choose</button>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border">
+                <h3 class="text-xl font-bold">Nordic Adventure</h3>
+                <p class="text-3xl font-bold my-4">1499 SEK</p>
+                <p class="text-slate-600 mb-4">Ideal for Lapland, snow activities, and northern lights.</p>
+                <button class="w-full bg-slate-800 text-white py-2 rounded-lg">Choose</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise 10 -->
+    <section id="ex-10">
+        <h2 class="text-2xl font-bold mb-4">10. Simple Navigation Bar</h2>
+        <nav class="sticky top-0 bg-white/70 backdrop-blur-md p-4 rounded-xl shadow-sm flex justify-between">
+            <h3 class="font-bold text-blue-700">Visit Sweden</h3>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-blue-500">Home</a>
+                <a href="#" class="hover:text-blue-500">Destinations</a>
+                <a href="#" class="hover:text-blue-500">Nature</a>
+                <a href="#" class="hover:text-blue-500">Culture</a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Exercise 11 -->
+    <section id="ex-11">
+        <h2 class="text-2xl font-bold mb-4">11. Custom Flexbox Alignment</h2>
+        <div class="space-y-4">
+            <div class="h-32 bg-white rounded-xl border flex justify-center items-center gap-4">
+                <div class="p-3 bg-blue-100 rounded font-semibold">Stockholm</div>
+                <div class="p-3 bg-blue-100 rounded font-semibold">Göteborg</div>
+                <div class="p-3 bg-blue-100 rounded font-semibold">Malmö</div>
+                <div class="p-3 bg-blue-100 rounded font-semibold">Kiruna</div>
+            </div>
+            <div class="h-32 bg-white rounded-xl border flex justify-between items-center p-4">
+                <div class="p-3 bg-yellow-100 rounded font-semibold">Uppsala</div>
+                <div class="p-3 bg-yellow-100 rounded font-semibold">Lund</div>
+                <div class="p-3 bg-yellow-100 rounded font-semibold">Växjö</div>
+                <div class="p-3 bg-yellow-100 rounded font-semibold">Karlskrona</div>
+            </div>
+            <div class="h-32 bg-white rounded-xl border flex justify-end items-end gap-4 p-4">
+                <div class="p-3 bg-slate-100 rounded font-semibold">Abisko</div>
+                <div class="p-3 bg-slate-100 rounded font-semibold">Visby</div>
+                <div class="p-3 bg-slate-100 rounded font-semibold">Örebro</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise 12 -->
+    <section id="ex-12">
+        <h2 class="text-2xl font-bold mb-4">12. Feature List with Icons</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="group bg-white p-6 rounded-xl shadow-sm">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:scale-110 transition">🌲</div>
+                <h3 class="font-bold mt-4">Beautiful Nature</h3>
+                <p class="text-slate-600">Forests, lakes, islands, and peaceful walking trails.</p>
+            </div>
+            <div class="group bg-white p-6 rounded-xl shadow-sm">
+                <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center group-hover:scale-110 transition">🚆</div>
+                <h3 class="font-bold mt-4">Public Transport</h3>
+                <p class="text-slate-600">Travel by train, tram, metro, bus, and ferry.</p>
+            </div>
+            <div class="group bg-white p-6 rounded-xl shadow-sm">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center group-hover:scale-110 transition">☕</div>
+                <h3 class="font-bold mt-4">Fika Culture</h3>
+                <p class="text-slate-600">Enjoy coffee, cinnamon buns, and relaxed conversations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise 13 -->
+    <section id="ex-13">
+        <h2 class="text-2xl font-bold mb-4">13. Sticky Sidebar Layout</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <aside class="md:col-span-1">
+                <div class="sticky top-6 bg-white p-4 rounded-xl shadow-sm">
+                    <h3 class="font-bold mb-2 text-blue-700">Sweden Guide</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>Stockholm</li>
+                        <li>Göteborg</li>
+                        <li>Malmö</li>
+                        <li>Kiruna</li>
+                        <li>Abisko</li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="md:col-span-3 bg-white p-6 rounded-xl shadow-sm space-y-4">
+                <p class="leading-relaxed"><strong>Stockholm</strong> is built on islands and offers museums, royal history, shopping streets, and beautiful waterfront views.</p>
+                <p class="leading-relaxed"><strong>Göteborg</strong> is known for seafood, trams, friendly city life, and access to the west coast archipelago.</p>
+                <p class="leading-relaxed"><strong>Malmö</strong> has modern architecture, parks, and the famous Öresund Bridge connecting Sweden and Denmark.</p>
+                <p class="leading-relaxed"><strong>Kiruna</strong> is a northern town where travellers can experience snow, Sami culture, and winter adventures.</p>
+                <p class="leading-relaxed"><strong>Abisko</strong> is one of the best places in Sweden to see the northern lights during the dark winter months.</p>
+            </main>
+        </div>
+    </section>
+
+    <!-- Exercise 14 -->
+    <section id="ex-14">
+        <h2 class="text-2xl font-bold mb-4">14. Gallery with Aspect Ratios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=900&q=80" class="aspect-video object-cover rounded-xl w-full" alt="Stockholm">
+            <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=700&q=80" class="aspect-square object-cover rounded-xl w-full" alt="Swedish forest">
+            <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=700&q=80" class="aspect-square object-cover rounded-xl w-full" alt="Swedish coast">
+            <img src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&fit=crop&w=700&q=80" class="aspect-square object-cover rounded-xl w-full" alt="Northern lights">
+        </div>
+    </section>
+
+    <!-- Exercise 15 -->
+    <section id="ex-15">
+        <h2 class="text-2xl font-bold mb-4">15. Responsive Order Change</h2>
+        <div class="flex flex-col md:flex-row gap-6 items-center bg-white p-6 rounded-xl shadow-sm">
+            <div class="order-2 md:order-1 md:w-1/2">
+                <h3 class="text-2xl font-bold mb-3 text-blue-700">Explore Swedish Lapland</h3>
+                <p class="text-slate-600">
+                    On mobile, the image appears first. On desktop, this text appears on the left and the image appears on the right. Swedish Lapland is perfect for snow, reindeer, and northern lights.
+                </p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80" class="order-1 md:order-2 md:w-1/2 rounded-xl h-72 object-cover" alt="Swedish Lapland">
+        </div>
+    </section>
+
+    <!-- Exercise 16 -->
+    <section id="ex-16">
+        <h2 class="text-2xl font-bold mb-4">16. Group-Hover Reveal</h2>
+        <div class="group relative overflow-hidden rounded-xl max-w-sm shadow-md">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" class="w-full h-72 object-cover" alt="Fika box">
+            <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-sm font-bold">Fika Gift Box · 299 SEK</div>
+            <button class="absolute bottom-0 left-0 right-0 bg-blue-600 text-white py-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Exercise 17 -->
+    <section id="ex-17">
+        <h2 class="text-2xl font-bold mb-4">17. Peer-State Toggle</h2>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+            <label class="flex items-center gap-2 mb-4">
+                <input type="checkbox" class="peer">
+                <span>I agree to the Sweden travel booking terms and conditions.</span>
+            </label>
+            <button class="pointer-events-none opacity-50 bg-slate-400 text-white px-4 py-2 rounded-lg peer-checked:bg-green-600 peer-checked:cursor-pointer peer-checked:pointer-events-auto peer-checked:opacity-100">Submit Booking</button>
+        </div>
+    </section>
+
+    <!-- Exercise 18 -->
+    <section id="ex-18">
+        <h2 class="text-2xl font-bold mb-4">18. Dark Mode Toggle Simulation</h2>
+        <div class="dark">
+            <div class="bg-white dark:bg-slate-900 text-slate-900 dark:text-white p-6 rounded-xl shadow-sm">
+                <h3 class="text-xl font-bold">Sweden Travel Guide</h3>
+                <p class="text-slate-600 dark:text-slate-300">
+                    This card is shown in dark mode using a parent class. It is useful for winter travel pages, night themes, or northern lights content.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise 19 -->
+    <section id="ex-19">
+        <h2 class="text-2xl font-bold mb-4">19. Form Validation UI</h2>
+        <form class="bg-white p-6 rounded-xl shadow-sm max-w-md">
+            <label class="block font-semibold mb-2">Email Address</label>
+            <input type="email" required placeholder="Enter your email for Sweden travel updates" class="peer w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 invalid:border-red-500 focus:invalid:ring-red-500">
+            <p class="hidden peer-focus:peer-invalid:block text-red-500 text-sm mt-2">Please enter a valid email address to receive Sweden travel updates.</p>
+        </form>
+    </section>
+
+    <!-- Exercise 20 -->
+    <section id="ex-20">
+        <h2 class="text-2xl font-bold mb-4">20. Full Dashboard Shell</h2>
+        <div class="relative h-96 bg-slate-100 rounded-xl overflow-hidden border">
+            <aside class="hidden md:block h-full w-64 bg-blue-900 text-white fixed left-0 top-0 p-6">
+                <h3 class="text-xl font-bold mb-6">Visit Sweden</h3>
+                <nav class="space-y-3">
+                    <a href="#" class="block hover:text-yellow-300">Dashboard</a>
+                    <a href="#" class="block hover:text-yellow-300">Destinations</a>
+                    <a href="#" class="block hover:text-yellow-300">Weather</a>
+                    <a href="#" class="block hover:text-yellow-300">Bookings</a>
+                    <a href="#" class="block hover:text-yellow-300">Profile</a>
+                </nav>
+            </aside>
+
+            <main class="md:ml-64 p-8">
+                <header class="bg-white p-4 rounded-xl shadow-sm mb-6">
+                    <h3 class="font-bold text-blue-700">Welcome to Sweden Dashboard</h3>
+                </header>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold mb-2">Upcoming Trips</h4>
+                        <p class="text-slate-600">Stockholm, Göteborg, Abisko, and Malmö</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold mb-2">Weather Reminder</h4>
+                        <p class="text-slate-600">Pack warm clothes for northern Sweden.</p>
+                    </div>
+                </div>
+            </main>
+
+            <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t p-3 flex justify-around">
+                <a href="#">Home</a>
+                <a href="#">Trips</a>
+                <a href="#">Weather</a>
+            </nav>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>
